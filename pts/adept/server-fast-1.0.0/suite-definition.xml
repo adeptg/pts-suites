@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.2-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>server-fast</Title>
+    <Version>1.0.0</Version>
+    <TestType>System</TestType>
+    <Description>Shrinked pts/server</Description>
+    <Maintainer>Yury Vidineev</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/leveldb-1.0.2</Test>
+    <Arguments>--benchmarks=readhot --num=1000000</Arguments>
+    <Description>Benchmark: Hot Read</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/leveldb-1.0.2</Test>
+    <Arguments>--benchmarks=fillsync --num=1000000</Arguments>
+    <Description>Benchmark: Fill Sync</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/leveldb-1.0.2</Test>
+    <Arguments>--benchmarks=overwrite --num=100000</Arguments>
+    <Description>Benchmark: Overwrite</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/leveldb-1.0.2</Test>
+    <Arguments>--benchmarks=seekrandom --num=1000000</Arguments>
+    <Description>Benchmark: Seek Random</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/sqlite-2.1.0</Test>
+    <Arguments>1</Arguments>
+    <Description>Threads / Copies: 1</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/blogbench-1.1.0</Test>
+    <Arguments>READ</Arguments>
+    <Description>Test: Read</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/blogbench-1.1.0</Test>
+    <Arguments>WRITE</Arguments>
+    <Description>Test: Write</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/simdjson-1.3.0</Test>
+    <Arguments>kostya</Arguments>
+    <Description>Throughput Test: Kostya</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/simdjson-1.3.0</Test>
+    <Arguments>large_random</Arguments>
+    <Description>Throughput Test: LargeRandom</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/node-express-loadtest-1.0.1</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/ebizzy-1.0.4</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/perl-benchmark-1.0.1</Test>
+    <Arguments>benchmarks/app/podhtml.b</Arguments>
+    <Description>Test: Pod2html</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/perl-benchmark-1.0.1</Test>
+    <Arguments>benchmarks/startup/noprog.b</Arguments>
+    <Description>Test: Interpreter</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/openssl-3.0.1</Test>
+    <Arguments>sha256</Arguments>
+    <Description>Algorithm: SHA256</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/openssl-3.0.1</Test>
+    <Arguments>rsa4096</Arguments>
+    <Description>Algorithm: RSA4096</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/node-web-tooling-1.0.0</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/couchdb-1.1.0</Test>
+    <Arguments>100 1000 24</Arguments>
+    <Description>Bulk Size: 100 - Inserts: 1000 - Rounds: 24</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/keydb-1.3.1</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/pgbench-1.11.1</Test>
+    <Arguments>-s 1 -c 100 -S</Arguments>
+    <Description>Scaling Factor: 1 - Clients: 100 - Mode: Read Only</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pgbench-1.11.1</Test>
+    <Arguments>-s 1 -c 100 -S</Arguments>
+    <Description>Scaling Factor: 1 - Clients: 100 - Mode: Read Only - Average Latency</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/sqlite-speedtest-1.0.1</Test>
+    <Description>Timed Time - Size 1,000</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/memtier-benchmark-1.0.1</Test>
+    <Arguments>-P redis</Arguments>
+    <Description>Protocol: Redis</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/redis-1.3.1</Test>
+    <Arguments>-t lpop</Arguments>
+    <Description>Test: LPOP</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/redis-1.3.1</Test>
+    <Arguments>-t sadd</Arguments>
+    <Description>Test: SADD</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/redis-1.3.1</Test>
+    <Arguments>-t lpush</Arguments>
+    <Description>Test: LPUSH</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/redis-1.3.1</Test>
+    <Arguments>-t get</Arguments>
+    <Description>Test: GET</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/redis-1.3.1</Test>
+    <Arguments>-t set</Arguments>
+    <Description>Test: SET</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/cassandra-1.1.1</Test>
+    <Arguments>READ</Arguments>
+    <Description>Test: Reads</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/cassandra-1.1.1</Test>
+    <Arguments>WRITE</Arguments>
+    <Description>Test: Writes</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/cassandra-1.1.1</Test>
+    <Arguments>MIXED_1_1</Arguments>
+    <Description>Test: Mixed 1:1</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/cassandra-1.1.1</Test>
+    <Arguments>MIXED_1_3</Arguments>
+    <Description>Test: Mixed 1:3</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/rocksdb-1.1.0</Test>
+    <Arguments>--benchmarks="readrandom"</Arguments>
+    <Description>Test: Random Read</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/rocksdb-1.1.0</Test>
+    <Arguments>--benchmarks="readwhilewriting"</Arguments>
+    <Description>Test: Read While Writing</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/rocksdb-1.1.0</Test>
+    <Arguments>--benchmarks="readrandomwriterandom"</Arguments>
+    <Description>Test: Read Random Write Random</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=add --num-conns=1</Arguments>
+    <Description>Method: Add - Connections: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=get --num-conns=1</Arguments>
+    <Description>Method: Get - Connections: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=set --num-conns=1</Arguments>
+    <Description>Method: Set - Connections: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=add --num-conns=128</Arguments>
+    <Description>Method: Add - Connections: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=get --num-conns=128</Arguments>
+    <Description>Method: Get - Connections: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=set --num-conns=128</Arguments>
+    <Description>Method: Set - Connections: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=append --num-conns=1</Arguments>
+    <Description>Method: Append - Connections: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=delete --num-conns=1</Arguments>
+    <Description>Method: Delete - Connections: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=prepend --num-conns=1</Arguments>
+    <Description>Method: Prepend - Connections: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=replace --num-conns=1</Arguments>
+    <Description>Method: Replace - Connections: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=append --num-conns=128</Arguments>
+    <Description>Method: Append - Connections: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=delete --num-conns=128</Arguments>
+    <Description>Method: Delete - Connections: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=prepend --num-conns=128</Arguments>
+    <Description>Method: Prepend - Connections: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/mcperf-1.4.0</Test>
+    <Arguments>--method=replace --num-conns=128</Arguments>
+    <Description>Method: Replace - Connections: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/nginx-2.0.0</Test>
+    <Arguments>-c 1</Arguments>
+    <Description>Concurrent Requests: 1</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/nginx-2.0.0</Test>
+    <Arguments>-c 20</Arguments>
+    <Description>Concurrent Requests: 20</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/nginx-2.0.0</Test>
+    <Arguments>-c 1000</Arguments>
+    <Description>Concurrent Requests: 1000</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>increment 1</Arguments>
+    <Description>Test: Increment - Clients: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>increment 128</Arguments>
+    <Description>Test: Increment - Clients: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>randomRead 1</Arguments>
+    <Description>Test: Random Read - Clients: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>randomWrite 1</Arguments>
+    <Description>Test: Random Write - Clients: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>randomRead 128</Arguments>
+    <Description>Test: Random Read - Clients: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>randomWrite 128</Arguments>
+    <Description>Test: Random Write - Clients: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>sequentialRead 1</Arguments>
+    <Description>Test: Sequential Read - Clients: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>sequentialWrite 1</Arguments>
+    <Description>Test: Sequential Write - Clients: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>sequentialRead 128</Arguments>
+    <Description>Test: Sequential Read - Clients: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>asyncRandomWrite 1</Arguments>
+    <Description>Test: Async Random Write - Clients: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>sequentialWrite 128</Arguments>
+    <Description>Test: Sequential Write - Clients: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>asyncRandomRead 128</Arguments>
+    <Description>Test: Async Random Read - Clients: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/hbase-1.0.1</Test>
+    <Arguments>asyncRandomWrite 128</Arguments>
+    <Description>Test: Async Random Write - Clients: 128</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/apache-2.0.0</Test>
+    <Arguments>-c 1</Arguments>
+    <Description>Concurrent Requests: 1</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/apache-2.0.0</Test>
+    <Arguments>-c 500</Arguments>
+    <Description>Concurrent Requests: 500</Description>
+  </Execute>  
+  <Execute>
+    <Test>pts/apache-siege-1.0.5</Test>
+    <Arguments>-c200</Arguments>
+    <Description>Concurrent Users: 200</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/apache-siege-1.0.5</Test>
+    <Arguments>-c250</Arguments>
+    <Description>Concurrent Users: 250</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/phpbench-1.1.6</Test>
+    <Description>PHP Benchmark Suite</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/php-1.0.0</Test>
+    <Arguments>php_/Zend/bench.php</Arguments>
+    <Description>Test: Zend bench</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/php-1.0.0</Test>
+    <Arguments>php_/Zend/micro_bench.php</Arguments>
+    <Description>Test: Zend micro_bench</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/influxdb-1.0.0</Test>
+    <Arguments>-c 4 -b 10000 -t 2,5000,1 -p 10000</Arguments>
+    <Description>Concurrent Streams: 4 - Batch Size: 10000 - Tags: 2,5000,1 - Points Per Series: 10000</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/influxdb-1.0.0</Test>
+    <Arguments>-c 64 -b 10000 -t 2,5000,1 -p 10000</Arguments>
+    <Description>Concurrent Streams: 64 - Batch Size: 10000 - Tags: 2,5000,1 - Points Per Series: 10000</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/influxdb-1.0.0</Test>
+    <Arguments>-c 1024 -b 10000 -t 2,5000,1 -p 10000</Arguments>
+    <Description>Concurrent Streams: 1024 - Batch Size: 10000 - Tags: 2,5000,1 - Points Per Series: 10000</Description>
+  </Execute>
+</PhoronixTestSuite>
+
