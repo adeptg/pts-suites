@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <SuiteInformation>
     <Title>server-fast</Title>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <TestType>System</TestType>
     <Description>Shrinked pts/server</Description>
     <Maintainer>Yury Vidineev</Maintainer>
@@ -32,6 +32,10 @@
     <Test>pts/sqlite-2.1.0</Test>
     <Arguments>1</Arguments>
     <Description>Threads / Copies: 1</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/etcd</Test>
+    <Mode>BATCH</Mode>
   </Execute>
   <Execute>
     <Test>pts/blogbench-1.1.0</Test>
@@ -168,74 +172,8 @@
     <Description>Test: Read Random Write Random</Description>
   </Execute>
   <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=add --num-conns=1</Arguments>
-    <Description>Method: Add - Connections: 1</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=get --num-conns=1</Arguments>
-    <Description>Method: Get - Connections: 1</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=set --num-conns=1</Arguments>
-    <Description>Method: Set - Connections: 1</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=add --num-conns=128</Arguments>
-    <Description>Method: Add - Connections: 128</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=get --num-conns=128</Arguments>
-    <Description>Method: Get - Connections: 128</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=set --num-conns=128</Arguments>
-    <Description>Method: Set - Connections: 128</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=append --num-conns=1</Arguments>
-    <Description>Method: Append - Connections: 1</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=delete --num-conns=1</Arguments>
-    <Description>Method: Delete - Connections: 1</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=prepend --num-conns=1</Arguments>
-    <Description>Method: Prepend - Connections: 1</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=replace --num-conns=1</Arguments>
-    <Description>Method: Replace - Connections: 1</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=append --num-conns=128</Arguments>
-    <Description>Method: Append - Connections: 128</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=delete --num-conns=128</Arguments>
-    <Description>Method: Delete - Connections: 128</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=prepend --num-conns=128</Arguments>
-    <Description>Method: Prepend - Connections: 128</Description>
-  </Execute>  
-  <Execute>
-    <Test>pts/mcperf-1.4.0</Test>
-    <Arguments>--method=replace --num-conns=128</Arguments>
-    <Description>Method: Replace - Connections: 128</Description>
+    <Test>pts/memcached</Test>
+    <Mode>BATCH</Mode>
   </Execute>  
   <Execute>
     <Test>pts/nginx-2.0.0</Test>
