@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<!--Phoronix Test Suite v10.8.2-->
+<!--Phoronix Test Suite v10.8.4-->
 <PhoronixTestSuite>
   <SuiteInformation>
     <Title>server-fast</Title>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <TestType>System</TestType>
     <Description>Shrinked pts/server</Description>
     <Maintainer>Yury Vidineev</Maintainer>
@@ -80,10 +80,13 @@
     <Description>Algorithm: RSA4096</Description>
   </Execute>
   <Execute>
-    <Test>pts/node-web-tooling-1.0.0</Test>
+    <Test>pts/node-web-tooling-1.0.1</Test>
   </Execute>
   <Execute>
     <Test>pts/keydb-1.3.1</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/clickhouse-1.1.0</Test>
   </Execute>
   <Execute>
     <Test>pts/pgbench-1.11.1</Test>
@@ -105,27 +108,27 @@
     <Description>Protocol: Redis</Description>
   </Execute>
   <Execute>
-    <Test>pts/redis-1.3.1</Test>
+    <Test>pts/redis-1.4.0</Test>
     <Arguments>-t lpop</Arguments>
     <Description>Test: LPOP</Description>
   </Execute>
   <Execute>
-    <Test>pts/redis-1.3.1</Test>
+    <Test>pts/redis-1.4.0</Test>
     <Arguments>-t sadd</Arguments>
     <Description>Test: SADD</Description>
   </Execute>
   <Execute>
-    <Test>pts/redis-1.3.1</Test>
+    <Test>pts/redis-1.4.0</Test>
     <Arguments>-t lpush</Arguments>
     <Description>Test: LPUSH</Description>
   </Execute>
   <Execute>
-    <Test>pts/redis-1.3.1</Test>
+    <Test>pts/redis-1.4.0</Test>
     <Arguments>-t get</Arguments>
     <Description>Test: GET</Description>
   </Execute>
   <Execute>
-    <Test>pts/redis-1.3.1</Test>
+    <Test>pts/redis-1.4.0</Test>
     <Arguments>-t set</Arguments>
     <Description>Test: SET</Description>
   </Execute>
@@ -150,17 +153,17 @@
     <Description>Test: Mixed 1:3</Description>
   </Execute>  
   <Execute>
-    <Test>pts/rocksdb-1.1.0</Test>
+    <Test>pts/rocksdb-1.3.0</Test>
     <Arguments>--benchmarks="readrandom"</Arguments>
     <Description>Test: Random Read</Description>
   </Execute>  
   <Execute>
-    <Test>pts/rocksdb-1.1.0</Test>
+    <Test>pts/rocksdb-1.3.0</Test>
     <Arguments>--benchmarks="readwhilewriting"</Arguments>
     <Description>Test: Read While Writing</Description>
   </Execute>
   <Execute>
-    <Test>pts/rocksdb-1.1.0</Test>
+    <Test>pts/rocksdb-1.3.0</Test>
     <Arguments>--benchmarks="readrandomwriterandom"</Arguments>
     <Description>Test: Read Random Write Random</Description>
   </Execute>
