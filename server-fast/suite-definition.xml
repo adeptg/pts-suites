@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <SuiteInformation>
     <Title>server-fast</Title>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <TestType>System</TestType>
     <Description>Shrinked pts/server</Description>
     <Maintainer>Yury Vidineev</Maintainer>
@@ -191,67 +191,67 @@
     <Description>Concurrent Requests: 1000</Description>
   </Execute>
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>increment 1</Arguments>
     <Description>Test: Increment - Clients: 1</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>increment 128</Arguments>
     <Description>Test: Increment - Clients: 128</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>randomRead 1</Arguments>
     <Description>Test: Random Read - Clients: 1</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>randomWrite 1</Arguments>
     <Description>Test: Random Write - Clients: 1</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>randomRead 128</Arguments>
     <Description>Test: Random Read - Clients: 128</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>randomWrite 128</Arguments>
     <Description>Test: Random Write - Clients: 128</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>sequentialRead 1</Arguments>
     <Description>Test: Sequential Read - Clients: 1</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>sequentialWrite 1</Arguments>
     <Description>Test: Sequential Write - Clients: 1</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>sequentialRead 128</Arguments>
     <Description>Test: Sequential Read - Clients: 128</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>asyncRandomWrite 1</Arguments>
     <Description>Test: Async Random Write - Clients: 1</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>sequentialWrite 128</Arguments>
     <Description>Test: Sequential Write - Clients: 128</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>asyncRandomRead 128</Arguments>
     <Description>Test: Async Random Read - Clients: 128</Description>
   </Execute>  
   <Execute>
-    <Test>pts/hbase-1.0.1</Test>
+    <Test>pts/hbase-1.1.0</Test>
     <Arguments>asyncRandomWrite 128</Arguments>
     <Description>Test: Async Random Write - Clients: 128</Description>
   </Execute>  
